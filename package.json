@@ -1,0 +1,32 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "package-win": "electron-builder --win",
+    "build": "build --dir"
+  },
+
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron-builder": "^20.0.7",
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "chromedriver": "^2.37.0",
+    "geckodriver": "^1.11.0",
+    "selenium-webdriver": "^3.3.1"
+  }
+}

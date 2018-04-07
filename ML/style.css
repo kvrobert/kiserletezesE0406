@@ -1,0 +1,41 @@
+body
+{
+	font-family: Arial, Verdana;
+	background: #eeeeee;
+	color: #999999;
+	margin: 25px;
+	margin-bottom: 50px;
+}
+h2
+{
+	text-align: center;
+	color: #666666;
+}
+img
+{
+	border: 1px solid #999999;
+	width: 100%;
+	margin-bottom: 25px;
+}
+span.message
+{
+	font-weight: bold;
+	color: #666666;
+}
+span.message > ul
+{
+	font-weight: normal;
+	color: #999999;
+	line-height: 24px;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	background: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	margin-bottom: 50px;
+}
+span.message ul b
+{
+	color: #888888;
+}

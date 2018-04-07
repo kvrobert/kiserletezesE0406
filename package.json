@@ -9,7 +9,6 @@
     "package-win": "electron-builder --win",
     "build": "build --dir"
   },
-
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",

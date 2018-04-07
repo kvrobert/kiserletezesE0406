@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://10.41.96.135/status/NE_Overview -->
+<html lang="en" class=""><head class=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="/" class="">--><base href="."><title class="">ML66-10-41-96-135 - MINI-LINK 6693 Node GUI</title><meta name="viewport" content="width=device-width,initial-scale=1" class=""><link rel="icon" type="image/x-icon" href="http://10.41.96.135/favicon.ico" class=""><script type="text/javascript" src="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/history.min.js.letöltés" class=""></script><link href="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/styles.62cd172e47b87dcfc08b.bundle.css" rel="stylesheet" class=""></head><body class="level-0 light"><ml66-webui ng-version="5.2.3" class=""><header class="sysbar">
+  <div class="left" routerlink="/" tabindex="0">
+    <i class="icon icon-econ"></i>
+    <span class="product">MINI-LINK 6693  Node GUI</span>
+    <span class="accronim">ML Node GUI</span>
+  </div>
+  <div class="right">
+    <div class="item">
+      <i class="icon icon-profile"></i>
+      <span class="username">admin_user</span>
+    </div>
+	</div>
+	<polldisabled-popup class=""><!---->
+
+</polldisabled-popup>
+</header>
+<div class="contextMenu-top" style="position: absolute; left: 100px; top: 100px;">
+	<ui-treecontext class=""><div class="menu">
+              <!---->
+            </div></ui-treecontext>
+</div>
+<div class="contextMenu-top" style="position: absolute; left: 100px; top: 100px;">
+	<div class="menu" style="min-width: 120px;">
+		<!---->
+		<!---->
+		<!---->
+	</div>
+</div>
+<span class="tooltip overlayToolTip visible" style="position: absolute; opacity: 0; left: -10000px">
+	<span class="message blue cpi" id="toolTipSizeTestMessage" style="white-space: initial;">This page gives an overview of the alarms and status of the NE and its plug-in units.</span>
+</span>
+<!---->
+<!----><!---->
+	<span class="tooltip overlayToolTip visible higher" style="position: absolute; left: 440.797px; top: 58px;">
+		<span class="message cpi blue" style="white-space: initial; cursor: pointer; position: absolute; left: 0px; top: 0px; width: 454.047px;">This page gives an overview of the alarms and status of the NE and its plug-in units.</span>
+		<span class="toolTab blue right" style="white-space: initial; cursor: pointer; left: -10px; top: 9px;"></span>
+	</span>
+<!---->
+	<span class="tooltip overlayToolTip" style="position: absolute; left: 259.656px; top: 8px;">
+		<span class="message cpi blue" style="white-space: initial; cursor: pointer; position: absolute; left: 0px; top: 0px; width: 500px;">Displays status parameters for the NE.<ul><li><b>NE Status</b> — Displays the status of the NE.<ul><li><b>In Service</b> — The NE is operating properly.</li><li><b>Reduced Service</b> — Traffic is running, but the management functionality is reduced or unavailable.</li><li><b>Out of Service</b> — The NE is not operating.</li></ul></li><li><b>NTP Status</b> — Displays the operational status of an NTP service. Only available if the NE is configured to use an NTP server.<ul><li><b>Up</b> — Contact established with NTP server.</li><li><b>Down</b> — Contact lost with NTP server.</li><li><b>Server Not Configured</b> — An NTP server is not configured.</li></ul></li><li><b>SW Status</b> — Displays whether a software upgrade is in progress.</li><li><b>Notifications</b> — Displays if notifications are enabled or disabled.</li></ul></span>
+		<span class="toolTab blue left" style="white-space: initial; cursor: pointer; left: 500px; top: 115px;"></span>
+	</span>
+
+<div class="main">
+	<div class="settings hidden" id="settings">
+		<div class="column sm-12 container">
+			<div class="profile">
+				<i class="icon icon-profile"></i>
+				<div class="username">admin_user</div>
+			</div>
+			<div class="content">
+				<div class="title">My settings</div>
+				<div class="item">
+					<div class="left">
+						Switch theme
+					</div>
+					<div class="right">
+						<label class="switch">
+							<input themechange="" type="checkbox" disabled="" class="">
+								<i class="ball"></i>
+									<span data-disabled="Light" data-enabled="Dark" class=""></span>
+						</label>	
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<button class="btn big" disabled=""><i class="icon icon-log-out"></i> Log Out</button>
+			</div>
+		</div>
+	</div>
+	<login-screen class=""><!----></login-screen>
+	<div class="app level-1 alarmOpened hideHelp">
+		<!---->
+		<div class="appbar">
+			<div class="actions-left">
+				<div class="item">
+					<i class="navigation-toggle closed"></i>
+				</div>
+				<div class="menu-anchor open-menu">Management Tree</div>
+				<div class="title open-menu">Network element
+					<span class="subtitle"></span>
+					<!----><i class="icon icon-help cpiHelp" id="help_pageLevel"></i>
+				</div>
+			</div>
+			<div class="actions-right">
+				<div class="item">
+					<button class="btn contextHelp"><i class="icon icon-help"></i>Show Help</button>
+					<!----><button class="btn"><i class="icon icon-reload"></i>Reload</button>
+					<!---->
+				</div>
+			</div>
+		</div>
+		<div class="appbody">
+			<div class="appnav">
+				<ui-tabs class=""><div class="tabs" style="height: 100%">
+
+	<div class="titles">
+		<!----><!---->
+			<div class="title selected">
+				<i class="icon icon-server" title="Unit"></i>
+				<dev-beginmarker class=""></dev-beginmarker>
+				<!---->
+				<dev-endmarker class=""></dev-endmarker>
+			</div>
+		<!---->
+			<div class="title">
+				<i class="icon icon-map" title="Packet"></i>
+				<dev-beginmarker class=""></dev-beginmarker>
+				<!---->
+				<dev-endmarker class=""></dev-endmarker>
+			</div>
+		<!---->
+			<div class="title">
+				<i class="icon icon-network" title="Radio"></i>
+				<dev-beginmarker class=""></dev-beginmarker>
+				<!---->
+				<dev-endmarker class=""></dev-endmarker>
+			</div>
+		<!---->
+			<div class="title">
+				<i class="icon icon-edit" title="DEV"></i>
+				<dev-beginmarker class=""></dev-beginmarker>
+				<!---->
+				<dev-endmarker class=""></dev-endmarker>
+			</div>
+		
+	</div>
+
+	<div class="contents">
+		<div class="content">
+			<!----><!---->
+				<dev-beginmarker class=""></dev-beginmarker>
+					<!---->
+						<!---->
+						<!----><!---->
+							<dev-endmarker class=""></dev-endmarker>
+							<!----><ui-accordion class=""><div class="tree" unselectable="off">
+	<ul class="">
+		<!----><!---->
+			<ui-accnode class=""><li class="">
+	<span class="title opened">
+		<!---->
+		<!----><div class="treeicon tree-subrack"></div>
+		<span class="">MINI-LINK 6693</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-module"></div>
+		<span class="">FAU 1301 1/0</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-module"></div>
+		<span class="">PFU 1301 1/3</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-module"></div>
+		<span class="">LTU 1002 1/4</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/1A</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/1B</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/1C</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/1D</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/2A</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/2B</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/2C</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/2D</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/3A</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/3B</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/3C</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/3D</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/4A</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/4B</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/4C</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/4D</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-sfp"></div>
+		<span class="">SFPo 1/4.5</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-rsms"></div>
+		<span class="">RS 1/4/5</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-rsms"></div>
+		<span class="">MS 1/4/5</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc4"></div>
+		<span class="">VC-4 1/4/5</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.1.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.1.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.1.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.1.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.1.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.1.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.2.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.2.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.2.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.2.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.2.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.2.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.3.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.3.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.3.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.3.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.3.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.3.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.4.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.4.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.4.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.4.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.4.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.4.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.5.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.5.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.5.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.5.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.5.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.5.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.6.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.6.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.6.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.6.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.6.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.6.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.7.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.7.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.7.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.7.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 1.7.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  1.7.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.1.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.1.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.1.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.1.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.1.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.1.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.2.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.2.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.2.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.2.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.2.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.2.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.3.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.3.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.3.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.3.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.3.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.3.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.4.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.4.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.4.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.4.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.4.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.4.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.5.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.5.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.5.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.5.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.5.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.5.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.6.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.6.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.6.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.6.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.6.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.6.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.7.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.7.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.7.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.7.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 2.7.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  2.7.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.1.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.1.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.1.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.1.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.1.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.1.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.2.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.2.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.2.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.2.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.2.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.2.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.3.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.3.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.3.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.3.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.3.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.3.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.4.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.4.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.4.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.4.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.4.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.4.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.5.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.5.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.5.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.5.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.5.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.5.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.6.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.6.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.6.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.6.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.6.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.6.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.7.1</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.7.1s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.7.2</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.7.2s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-vc12"></div>
+		<span class="">VC-12 1/4/5 3.7.3</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-e1"></div>
+		<span class="">E1 1/4/5  3.7.3s</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="title closed">
+		<!---->
+		<!----><div class="treeicon tree-module"></div>
+		<span class="">NPU 1002 1/6</span>
+	</span>
+	<ul class="">
+	<!----><!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-lan"></div>
+		<span class="">LAN 1/6/4</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-lan"></div>
+		<span class="">LAN 1/6/5</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-lan"></div>
+		<span class="">LAN-DCN 1/6/0</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-usb"></div>
+		<span class="">Local Access 1/6/1</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9A</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9B</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9C</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9G</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9H</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userin"></div>
+		<span class="">User Input 1/6/9I</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userout"></div>
+		<span class="">User Output 1/6/9D</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userout"></div>
+		<span class="">User Output 1/6/9E</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	<!---->
+		<ui-accnode class=""><li class="">
+	<span class="closed">
+		<!---->
+		<!----><div class="treeicon tree-userout"></div>
+		<span class="">User Output 1/6/9F</span>
+	</span>
+	<ul class="">
+	<!---->
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+	
+	</ul>
+</li></ui-accnode>
+		
+	</ul>
+</div></ui-accordion>
+							<dev-beginmarker class=""></dev-beginmarker>
+						
+					
+				<dev-endmarker class=""></dev-endmarker>
+			<!---->
+				<dev-beginmarker class=""></dev-beginmarker>
+					<!---->
+						<!---->
+						<!----><!---->
+							<dev-endmarker class=""></dev-endmarker>
+							<!---->
+							<dev-beginmarker class=""></dev-beginmarker>
+						
+					
+				<dev-endmarker class=""></dev-endmarker>
+			<!---->
+				<dev-beginmarker class=""></dev-beginmarker>
+					<!---->
+						<!---->
+						<!----><!---->
+							<dev-endmarker class=""></dev-endmarker>
+							<!---->
+							<dev-beginmarker class=""></dev-beginmarker>
+						
+					
+				<dev-endmarker class=""></dev-endmarker>
+			<!---->
+				<dev-beginmarker class=""></dev-beginmarker>
+					<!---->
+						<!----><!---->
+							<!---->
+						
+						<!---->
+					
+				<dev-endmarker class=""></dev-endmarker>
+			
+		</div>
+	</div>
+</div>
+
+</ui-tabs>
+			</div>
+			<div class="appcontent" id="appcontent">
+				<router-outlet class=""></router-outlet><config-page><dev-beginmarker></dev-beginmarker>
+<!----><!---->
+  <dev-endmarker></dev-endmarker>
+  <div id="pageDisplayCounter" style="display: none">5</div>
+  <ml6-configrootitem><!----><!---->  <!---->      <!---->      <!---->      <!---->      <!----><ml6-tilerows><!----><!---->  <!----><div class="row">    <!----><div class="tile xl-4 lg-5 md-12 sm-12">      <div class="header">        <div class="left">          <div class="title">            NE status          </div>          <div class="subtitle">                      </div>        </div>        <!----><div class="right cpiHelp">          <div class="action">            <i class="icon icon-help" id="help_5_0_0"></i>          </div>        </div>      </div>      <div class="content" id="undefined">        <!---->            <!---->            <!----><ml6-configfields><table class="fields">  <tbody><!----><tr>    <td style="font-weight: bold">NE status</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="neStatusLabel">Reduced Service</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">NE severity</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv critical" id="neSeverityLabel">Critical</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">NTP status alarm</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="neStatusAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">SW status</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="swStatusLabel">No Upgrade</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Notifications</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="notificationsLabel">Enabled</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr></tbody></table> </ml6-configfields>            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->              </div>    </div><div class="tile xl-4 lg-7 md-12 sm-12">      <div class="header">        <div class="left">          <div class="title">            NE status          </div>          <div class="subtitle">                      </div>        </div>        <!----><div class="right cpiHelp">          <div class="action">            <i class="icon icon-help" id="help_5_0_1"></i>          </div>        </div>      </div>      <div class="content" id="undefined">        <!---->            <!---->            <!----><ml6-configfields><table class="fields">  <tbody><!----><tr>    <td style="font-weight: bold">NE uptime</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="neUptimeLabel">14 Days 23 hours 43 minutes 25 seconds</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">NE date and time</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="neDateAndTimeLabel">2018-04-06 13:55:36 (UTC +02:00)</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">SW baseline</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="swBaselineLabel">MINI-LINK 6600 6366 1.5 R6WD08</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Telecom standard</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="telecomStandardLabel">ETSI</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">DCN-mode</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="dcnModeLabel">VLAN</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr></tbody></table> </ml6-configfields>            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->              </div>    </div><div class="tile xl-4 lg-12 md-12 sm-12">      <div class="header">        <div class="left">          <div class="title">            NE license status          </div>          <div class="subtitle">                      </div>        </div>        <!----><div class="right cpiHelp">          <div class="action">            <i class="icon icon-help" id="help_5_0_2"></i>          </div>        </div>      </div>      <div class="content" id="undefined">        <!---->            <!---->            <!----><ml6-configfields><table class="fields">  <tbody><!----><tr>    <td style="font-weight: bold">NE license status</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="neLicenceStatusLabel">Warning</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">NE license mode</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="neLicenseModeLabel">Unlocked</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Unlocked reason</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="unlockedReasonLabel">Software Upgrade</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Left unlocked time</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="leftUnlockedTimeLabel">2960 Hours</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Latest unlocked period entered</td>    <td>      <!---->          <!----><ml6-configlabel>
+<span class="tooltipHandler" id="latestUnlockedLabel">2018-02-06 13:39:35</span></ml6-configlabel>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr></tbody></table> </ml6-configfields>            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->              </div>    </div>  </div><div class="row">    <!----><div class="tile xl-8 lg-12 md-12 md-ovf sm-12">      <div class="header">        <div class="left">          <div class="title">            Unit overview          </div>          <div class="subtitle">                      </div>        </div>        <!----><div class="right cpiHelp">          <div class="action">            <i class="icon icon-help" id="help_5_1_0"></i>          </div>        </div>      </div>      <div class="content" id="undefined">        <!---->            <!---->            <!---->            <!---->            <!---->            <!----><ml6-configneoverview><!---->
+  <!----><ml6-configne669xoverview><div style="width: 60rem">
+</div>
+<div class="subrackDiv">
+  <table>
+    <tbody><tr>
+      <td style="width: 2rem"></td>
+      <td style="width: 2rem"></td>
+      <td style="width: 6rem"></td>
+      <td style="width: 13.5rem; padding: 0"></td>
+      <td style="width: 6.8rem; padding: 0"></td>
+      <td style="width: 20.5rem; padding: 0"></td>
+      <td style="width: 2rem"></td>
+      <td style="width: 2rem"></td>
+      <td style="width: 2rem"></td>
+    </tr>
+    <!----><tr>
+      <!---->
+      <!---->
+      <!----><td>&nbsp;</td>
+      <!----><td>&nbsp;</td>
+      <!----><td style="text-align: center" class="slot FAU cleared" rowspan="3"><div>FAU 1301</div></td>
+      <td class="slot major" colspan="1"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  PFU 1301
+</div>
+<div class="attached">
+  <!---->
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <!----><td class="slot critical" colspan="2"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  NPU 1002
+</div>
+<div class="attached">
+  <!----><div class="sfp">
+    <div class="clear"><i class="icon icon-cross"></i></div>
+  </div><div class="sfp">
+    <div class="clear"><i class="icon icon-cross"></i></div>
+  </div><div class="sfp">
+    <div class="clear"><i class="icon icon-cross"></i></div>
+  </div><div class="rmm">
+    <div class="clear"><i class="icon icon-cross"></i></div>
+  </div>
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <td class="slotNumber">3/6</td>
+      <!---->
+      <!---->
+      <!----><td>&nbsp;</td>
+      <!----><td>&nbsp;</td>
+    </tr><tr>
+      <!----><td class="rau left norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!----><td class="rau left norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!---->
+      <!---->
+      <!---->
+      <td class="slot undefined" colspan="2"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  
+</div>
+<div class="attached">
+  <!---->
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <!----><td class="slot undefined" colspan="1"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  
+</div>
+<div class="attached">
+  <!---->
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <td class="slotNumber">2/5</td>
+      <!----><td class="rau norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!----><td class="rau norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!---->
+      <!---->
+    </tr><tr>
+      <!----><td class="rau left norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!----><td class="rau left norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!---->
+      <!---->
+      <!---->
+      <td class="slot undefined" colspan="2"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  
+</div>
+<div class="attached">
+  <!---->
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <!----><td class="slot critical" colspan="1"><ml6-neoverviewslot><div class="protection">1+1</div>
+<!----><div style="cursor: pointer">
+  LTU 1002
+</div>
+<div class="attached">
+  <!----><div class="sfp inserted cleared">
+    <div class="clear"><i class="icon icon-cross"></i></div>
+  </div>
+</div>
+<div class="clear"><i class="icon icon-cross"></i></div></ml6-neoverviewslot></td>
+      <td class="slotNumber">1/4</td>
+      <!----><td class="rau norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!----><td class="rau norau"><ml6-nerau><div id="ne_rau_0"></div><div class="clear"><i class="icon icon-cross"></i></div></ml6-nerau></td>
+      <!---->
+      <!---->
+    </tr>
+  </tbody></table>
+</div></ml6-configne669xoverview>
+  <!---->
+  <!---->
+  <!---->
+</ml6-configneoverview>            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->              </div>    </div><div class="tile xl-4 lg-12 md-12 sm-12">      <div class="header">        <div class="left">          <div class="title">            NE alarms          </div>          <div class="subtitle">                      </div>        </div>        <!----><div class="right cpiHelp">          <div class="action">            <i class="icon icon-help" id="help_5_1_1"></i>          </div>        </div>      </div>      <div class="content" id="undefined">        <!---->            <!---->            <!----><ml6-configfields><table class="fields">  <tbody><!----><tr>    <td style="font-weight: bold">Power failure input A</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="powerFailureAAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Power failure input B</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv major" id="powerFailureBAlarm">Major</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Traffic failure</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="trafficFailureAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Control failure</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="controlFailureAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">Low input voltage</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="lowInputVoltageAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr><tr>    <td style="font-weight: bold">BID missing</td>    <td>      <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!----><ml6-configalarm><div class="alarmDiv cleared" id="bidMissingAlarm">No Alarm</div></ml6-configalarm>          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          <!---->          </td>  </tr></tbody></table> </ml6-configfields>            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->            <!---->              </div>    </div>  </div><!----><!----></ml6-tilerows>      <!---->  </ml6-configrootitem>
+  <dev-beginmarker></dev-beginmarker>
+
+<!---->
+<dev-endmarker></dev-endmarker></config-page>
+			</div>
+		</div>
+		<div class="alarmList" id="alarmList">
+			<ui-alarmlist class=""><div class="pillgroup alarmPills" style="padding-left: 5px; padding-right: 5px">
+	<div class="pill severity-critical selected">
+		<i class="icon icon-severity-critical"></i> Critical
+	</div>
+	<div class="pill severity-major selected">
+		<i class="icon icon-severity-major"></i> Major
+	</div>
+	<div class="pill severity-minor selected">
+		<i class="icon icon-severity-minor"></i> Minor
+	</div>
+	<div class="pill severity-warning selected">
+		<i class="icon icon-severity-warning"></i> Warning
+	</div>
+	<div class="pill severity-indeterminate selected">
+		<i class="icon icon-severity-indeterminate"></i> Indeterminate
+	</div>
+</div>
+<div class="summaryncollapse" style="padding-left: 5px; padding-right: 5px">
+	<a class=""><i class="icon icon-minimize"></i> Collapse alarm list</a>
+</div>
+<div class="summarynexpand" style="padding-left: 5px; padding-right: 5px">
+	<a class=""><i class="icon icon-launch"></i> Expand alarm list</a>
+</div>
+<ui-alarmtable class=""><table class="table compact striped sortable nowrap alarmTable" style="min-width: 100%">
+  <tbody class=""><tr class="">
+    <th class="colorBand" style="cursor: pointer">
+    </th>
+    <th class="is-sortable asc">
+      Severity
+    </th>
+    <th class="is-sortable">
+      AlarmType
+    </th>
+    <th class="is-sortable">
+      AlarmId
+    </th>
+    <th class="is-sortable">
+      AlarmTime
+    </th>
+    <th class="is-sortable">
+      Source
+    </th>
+    <th class="is-sortable">
+      SpecificProblem
+    </th>
+    <th class="is-sortable">
+      ProbableCause
+    </th>
+  </tr>
+  <!----><!---->
+    <tr class="">
+      <td class="colorBand Critical">&nbsp;</td>
+      <td class="">Critical</td>
+      <td class="">EquipmentAlarm</td>
+      <td class="">25730</td>
+      <td class="">2018-04-05 18:06:35 (UTC +02:00)</td>
+      <td class="">SFP S-1.1 1310nm -5/+85C 1/4.5</td>
+      <td class="">SFP TX Bias Low at LTU1002</td>
+      <td class="">ReplaceableUnitProblem</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Critical">&nbsp;</td>
+      <td class="">Critical</td>
+      <td class="">EquipmentAlarm</td>
+      <td class="">5</td>
+      <td class="">2018-03-22 13:13:39 (UTC +01:00)</td>
+      <td class="">RMM 1/6.1</td>
+      <td class="">Unit Inaccessible</td>
+      <td class="">ReplaceableUnitProblem</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Critical">&nbsp;</td>
+      <td class="">Critical</td>
+      <td class="">CommunicationsAlarm</td>
+      <td class="">1670</td>
+      <td class="">2018-03-23 11:32:49 (UTC +01:00)</td>
+      <td class="">E1 1/4/1C</td>
+      <td class="">LOS</td>
+      <td class="">LossOfSignal</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Critical">&nbsp;</td>
+      <td class="">Critical</td>
+      <td class="">EquipmentAlarm</td>
+      <td class="">25641</td>
+      <td class="">2018-04-05 17:09:07 (UTC +02:00)</td>
+      <td class="">SFP S-1.1 1310nm -5/+85C 1/4.5</td>
+      <td class="">SFP TX Power Low at LTU1002</td>
+      <td class="">ReplaceableUnitProblem</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Major">&nbsp;</td>
+      <td class="">Major</td>
+      <td class="">OperationalViolation</td>
+      <td class="">1</td>
+      <td class="">2018-03-22 13:13:29 (UTC +01:00)</td>
+      <td class="">MINI-LINK Traffic Node ML66-10-41-96-135</td>
+      <td class="">FAL1242515 License Missing - M-L 669x R1 Basic SW</td>
+      <td class="">DenialOfService</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Major">&nbsp;</td>
+      <td class="">Major</td>
+      <td class="">OperationalViolation</td>
+      <td class="">2</td>
+      <td class="">2018-03-22 13:13:29 (UTC +01:00)</td>
+      <td class="">MINI-LINK Traffic Node ML66-10-41-96-135</td>
+      <td class="">FAL1242693 License Missing - M-L 6600 E1 ports</td>
+      <td class="">DenialOfService</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Major">&nbsp;</td>
+      <td class="">Major</td>
+      <td class="">OperationalViolation</td>
+      <td class="">3</td>
+      <td class="">2018-03-22 13:13:29 (UTC +01:00)</td>
+      <td class="">MINI-LINK Traffic Node ML66-10-41-96-135</td>
+      <td class="">FAL1242805 License Missing - M-L 6600 STM-1 port</td>
+      <td class="">DenialOfService</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Major">&nbsp;</td>
+      <td class="">Major</td>
+      <td class="">OperationalViolation</td>
+      <td class="">4</td>
+      <td class="">2018-03-22 13:13:29 (UTC +01:00)</td>
+      <td class="">MINI-LINK Traffic Node ML66-10-41-96-135</td>
+      <td class="">License handling is in an unlocked period. Please install any missing licenses.</td>
+      <td class="">Unavailable</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Major">&nbsp;</td>
+      <td class="">Major</td>
+      <td class="">EquipmentAlarm</td>
+      <td class="">6</td>
+      <td class="">2018-03-22 13:13:39 (UTC +01:00)</td>
+      <td class="">MINI-LINK Traffic Node ML66-10-41-96-135</td>
+      <td class="">Power Failure B (upper input)</td>
+      <td class="">PowerProblem</td>
+    </tr>
+  <!---->
+    <tr class="">
+      <td class="colorBand Warning">&nbsp;</td>
+      <td class="">Warning</td>
+      <td class="">EquipmentAlarm</td>
+      <td class="">25729</td>
+      <td class="">2018-04-05 18:06:20 (UTC +02:00)</td>
+      <td class="">SFP S-1.1 1310nm -5/+85C 1/4.5</td>
+      <td class="">SFP RX Power Low at LTU1002</td>
+      <td class="">ReplaceableUnitProblem</td>
+    </tr>
+  
+</tbody></table></ui-alarmtable></ui-alarmlist>
+		</div>
+	</div>
+</div>
+</ml66-webui><script type="text/javascript" class="">if (navigator.userAgent.indexOf('rv:11.0') !== -1 && navigator.userAgent.indexOf('Trident') !== -1) {
+      document.body.className = 'level-0 light IE11';
+    }
+    if (navigator.userAgent.indexOf('MSIE 10.0') !== -1) {
+      document.body.className = 'level-0 light IE10';
+    }
+    if (navigator.userAgent.indexOf('MSIE 9.0') !== -1) {
+      document.body.className = 'level-0 light IE9';
+    }</script><script type="text/javascript" src="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/inline.d5d505b51fd37ed41205.bundle.js.letöltés" class=""></script><script type="text/javascript" src="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/polyfills.d8bfd7c3b5607860215d.bundle.js.letöltés" class=""></script><script type="text/javascript" src="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/main.d8c161324292b8256dbb.bundle.js.letöltés" class=""></script><iframe src="./ML66-10-41-96-135 - MINI-LINK 6693 Node GUI_files/bar.html" id="xh-bar" class="hidden"></iframe></body></html>

@@ -1,4 +1,4 @@
-function CPICapturer( ) {
+function CPICapturer(driver) {
 
     var nodeUrel = "http://10.41.96.136";
     var webDriver = require('selenium-webdriver');
@@ -9,7 +9,7 @@ function CPICapturer( ) {
     var fs = require('fs');
 
     var self = this;
-    var driver;
+    //var driver;
 
     // to the HTMÉ capturing
     var queueQM = [];
@@ -26,15 +26,15 @@ function CPICapturer( ) {
    // var driver = new webDriver.Builder().forBrowser('chrome').build();
     this.manageWindow = function( renderDriver, callback ){
     console.log("driver átjött...");
-    this.driver = renderDriver;
-    this.driver.manage().window().maximize();
+    //driver = renderDriver;
+    driver.manage().window().maximize();
     callback();
     }
 
     // use user:pass to enter 
     this.auth = function (nodeUrel, callback) {
         console.log('Authentication in progress...url: ' + nodeUrel);
-        this.driver.get(nodeUrel).then(() => {
+        driver.get(nodeUrel).then(() => {
             //    driver.findElement( by.name('username') ).sendKeys('admin_user');
             //    driver.findElement( by.name('password') ).sendKeys('ericsson');
             this.driver.wait(until.elementLocated(by.name('username')), 1000);

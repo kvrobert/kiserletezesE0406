@@ -1,6 +1,6 @@
 function removeStyleAttributesFromHTL( html )
 {
-    var pattern = /style=".*?"/i;
+    var pattern = /style=".*?"/i;           // ennek az összesnek csinálok egy service.js -t..oda bele... megcsinálja..visszaadja...stb
     do
     {
         html = html.replace( pattern, '' );
@@ -64,7 +64,9 @@ var bodyHTML = "";
 var cpiHTML = "";
 isAuthenticated = false;    
 
-var url = "http://10.41.96.136/status/NE_Overview";
+var nodeUrel = "http://10.41.96.136";
+var url = "http://10.41.96.136/status/NE_Overview"; //  ===> szetszedve: nodUrel+url ...igy lesz a teljes cim 
+                                                    // mondjuk a ciklust végző callback function adná őket vissza..kiszedve a config-ból
 
 //var webCapturer = new WebCapturer();
 var cpicapturer = new CPICapturer(driver);
@@ -92,8 +94,8 @@ cpicapturer.manageWindow( null, () => render() );
                             console.log( "A CONTET: " + contet);
                         } );
                     //    console.log( "From render...Element to collect: " + qms + " hossz: " + qms.length );
-                        generateDocumentation( () => writeHtmlFile() );  
-                    });
+                        generateDocumentation( () => writeHtmlFile() );  // itt egy plusz callback... megnézi van e még URL, 
+                    });                                                 // ha igen, rekurzívan meghívja magát.. ha nincs, doksi generálás
                                                
                 });
             } );
